@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridtask</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(10,auto);
+            border: 3px solid;
+            box-sizing: border-box;
+        }
+        .main div{
+            border: 2px solid white;
+        }
+        .c1{
+            grid-column: 1/11;
+            background-color: orangered;
+        }
+        .c2{
+            grid-area: 2/1/7/4;
+            background-color: rgb(11, 237, 11);
+        }
+        .c3{
+            grid-area: 2/4/4/8;
+            background-color: rgb(58, 163, 198);
+        }
+        .c4{
+            grid-area: 2/8/6/11;
+            background-color: rgb(66, 218, 167);
+        }
+        .c5{
+            grid-area: 4/4/6/6;
+            background-color: green;
+        }
+        .c6{
+            grid-column: 6/8;
+            background-color: rgb(56, 204, 66);
+        }
+        .c7{
+            grid-column: 6/8;
+            background-color: rgb(246, 34, 101);
+        }
+        .c8{
+            grid-column: 4/10;
+            background-color: red;
+        }
+        .c9{
+            background-color: rgb(152, 6, 16);
+        }
+        .c10{
+            grid-column: 1/11;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+        <div class="c3">3</div>
+        <div class="c4">4</div>
+        <div class="c5">5</div>
+        <div class="c6">6</div>
+        <div class="c7">7</div>
+        <div class="c8">8</div>
+        <div class="c9">9</div>
+        <div class="c10">10</div>
+    </div>
+</body>
+</html>
